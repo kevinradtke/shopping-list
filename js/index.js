@@ -2,13 +2,13 @@ $('#addButton').on("click",function(event){
     event.preventDefault()
     let item = $('#inputItem').val()
     $('#allItems').append(`
-                            <div class="myItem">
-                                <li class="itemName" style="text-decoration: none;">
+                            <li class="myItem">
+                                <div class="itemName" style="text-decoration: none;">
                                     ${item}
-                                </li>
+                                </div>
                                 <button class="checkButton">Check</button>
                                 <button class="deleteButton">Delete</button>
-                            </div>
+                            </li>
                         `)
 })
 
